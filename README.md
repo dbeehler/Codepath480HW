@@ -10,3 +10,4 @@ Type: Webapps
 CVE:2015-3440
 
 https://www.exploit-db.com/exploits/36844
+<img src="screenfetch.gif" alt="WordPress XSS">
