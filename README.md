@@ -24,15 +24,15 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+1. (Required) CVE:2019-17671
+  - [ ] Summary: You are able to view Private posts by adding a variable to the URL
+    - Vulnerability types: WEBAPP
+    - Tested in version: 4.1.31
+    - Fixed in version: 5.2.4
+  - [ ] GIF Walkthrough: <img src="exploit2.gif" alt="WordPress URL attack">
+  - [ ] Steps to recreate: add ?static=1&order=asc to the end of your URL and you can access hidden posts
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://www.exploit-db.com/exploits/47690)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
