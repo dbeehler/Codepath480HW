@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -15,14 +15,14 @@ Time spent: **X** hours spent in total
   - [ ] Steps to recreate: insert any Javascript code into a comment and reload the page.
   - [ ] Affected source code: 
     - [Link 1](https://www.exploit-db.com/exploits/36844)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
+1. (Required) Wordpress Popup Builder 3.49 - Persistent Cross-Site Scripting - EDB-ID: 47518
+  - [ ] Summary: This plugin allows you to add a popup to any post on a WP website.
+    - Vulnerability types: WEBAPP
+    - Tested in version: 3.49
+    - Fixed in version: I tried it on the latest version and it still works
+  - [ ] GIF Walkthrough: <img src="exploit3.gif" alt="Popup Builder XSS">
+  - [ ] Steps to recreate: install popup builder, create a popup with code in the title, create a page or post in WP, the XSS with trigger
+  - [ ] Affected source code: https://www.exploit-db.com/exploits/47518
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) CVE:2019-17671
   - [ ] Summary: You are able to view Private posts by adding a variable to the URL
