@@ -15,7 +15,7 @@ Time spent: **10** hours spent in total
   - [ ] Steps to recreate: insert any Javascript code into a comment and reload the page.
   - [ ] Affected source code: 
     - [Link 1](https://www.exploit-db.com/exploits/36844)
-1. (Required) Wordpress Popup Builder 3.49 - Persistent Cross-Site Scripting - EDB-ID: 47518
+2. (Required) Wordpress Popup Builder 3.49 - Persistent Cross-Site Scripting - EDB-ID: 47518
   - [ ] Summary: This plugin allows you to add a popup to any post on a WP website.
     - Vulnerability types: WEBAPP
     - Tested in version: 3.49
@@ -23,8 +23,8 @@ Time spent: **10** hours spent in total
   - [ ] GIF Walkthrough: <img src="exploit3.gif" alt="Popup Builder XSS">
   - [ ] Steps to recreate: install popup builder, create a popup with code in the title, create a page or post in WP, the XSS with trigger
   - [ ] Affected source code: https://www.exploit-db.com/exploits/47518
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) CVE:2019-17671
+    - [Link 1](https://www.exploit-db.com/exploits/47518)
+3. (Required) CVE:2019-17671
   - [ ] Summary: You are able to view Private posts by adding a variable to the URL
     - Vulnerability types: WEBAPP
     - Tested in version: 4.1.31
@@ -33,15 +33,15 @@ Time spent: **10** hours spent in total
   - [ ] Steps to recreate: add ?static=1&order=asc to the end of your URL and you can access hidden posts
   - [ ] Affected source code:
     - [Link 1](https://www.exploit-db.com/exploits/47690)
-1. (Optional) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+1. (Optional) Stored XSS on Broken Themes via filename
+  - [ ] Summary: If you name a theme file using JS code then it will execute. I wasnt able to recreate because you have to host on a linux system, Windows doesnt allow <> in the filenames. I wasn't able to test this, just thought I would upload either way.
+    - Vulnerability types: WEBAPP, XSS
+    - Tested in version: ??
+    - Fixed in version: ??
+  - [ ] GIF Walkthrough: None
+  - [ ] Steps to recreate: download a theme, name the folder to your JS code and break it by editing the style.css, rezip the folder, upload to WP, go to theme page
+  - [ ] Affected source code: 
+    - [Link 1](https://hackerone.com/reports/406289)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
